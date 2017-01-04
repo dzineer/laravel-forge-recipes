@@ -5,3 +5,6 @@ This repo is a personal collection of Forge Recipes that are mostly altered or o
 ### Database
 * [MongoDB server and php-mongo install for PHP 7.0](mongodb-and-php-mongodb-for-php7.0.md)
 * [MongoDB server and php-mongo install for PHP 7.1](mongodb-and-php-mongodb-for-php7.1.md)
+
+### Environment
+* [Sync server time with Amazon NTP](sync-ntp-with-amazon.md)
