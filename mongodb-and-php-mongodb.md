@@ -7,6 +7,20 @@ Notes:
 * This adds both the MongoDB server and the php drivers. To install the drivers only, comment-out `sudo apt-get install -y mongodb-org;` in the script below.
 
 ``` shell
+###########################################################################
+#
+# MongoDB server and php-mongo install
+# Tested on Ubuntu 16 - Homestead and Forge installs at EC2 with PHP 7.0
+#
+# Notes:
+#
+# - Remove 'extension = mongodb.so' from your main php.ini, as it needs to 
+#   load after other extensions. 
+#
+# - This adds both the MongoDB server and the php drivers. To install the
+#   drivers only, comment-out "sudo apt-get install -y mongodb-org;".
+#
+###########################################################################
 echo "MongoDB install script with PHP7 & nginx [Laravel Homestead/Forge]"
 echo "Importing the public key used by the package management system";
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
@@ -31,5 +45,4 @@ sudo ln -s /etc/php/7.0/mods-available/mongodb.ini /etc/php/7.0/fpm/conf.d/30-mo
 sudo service mongod start
 echo "restarting The nginx server";
 sudo service nginx restart && sudo service php7.0-fpm restart
-###########################################################################
 ```
