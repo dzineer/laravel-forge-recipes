@@ -8,6 +8,7 @@ Tested on Ubuntu 16 - Homestead and Forge
 # Tested on Ubuntu 16 - Homestead and Forge
 #
 ###########################################################################
+
 # This simply installs the NTP tool.
 echo "Installing NTP...";
 apt-get install ntp -y
