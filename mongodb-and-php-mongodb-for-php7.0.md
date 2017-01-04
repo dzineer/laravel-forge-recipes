@@ -1,4 +1,4 @@
-## MongoDB server and php-mongo install
+## MongoDB server and php-mongo install for PHP 7.0
 Tested on Ubuntu 16 - Homestead and Forge installs at EC2 with PHP 7.0
 
 Notes:
